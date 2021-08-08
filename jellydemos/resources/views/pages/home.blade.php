@@ -4,6 +4,10 @@
 
     <main>
 
+        {{-- BEGIN HOME SLIDER SECTION --}}
+        <section class="jumbotron">
+
+        </section>
     </main>
 
 @endsection

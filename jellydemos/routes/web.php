@@ -19,4 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Area Admin
+Route::get('/admin', 'AdminController@index')->name('admin');
+
+// Pagina home per gli Utenti
+Route::get('/home','UserController@home') -> name('home');
