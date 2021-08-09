@@ -90,6 +90,51 @@
         {{-- TIMETABLE SECTION --}}
         <section class="timetable">
 
+            <div class="section-title">
+                <div class="timetable-decorator-1"></div>
+                <div class="opening-hours">Opening Hours</div>
+                <div class="timetable-decorator-2"></div>
+            </div>
+
+            <div class="reservations">Call For Reservations</div>
+
+            <div class="hour-days-container">
+
+                <div class="section-subtitle-container">
+                    <div class="section-subtitle-days">
+                        Sunday to Tuesday
+                    </div>
+                    <div class="section-subtitle-hours">
+                        09:00
+                        <br>
+                        24:00
+                    </div>
+                </div>
+
+                <div class="column-divider"></div>
+
+                <div class="section-subtitle-container">
+                    <div class="section-subtitle-days">
+                        Friday and Saturday
+                    </div>
+                    <div class="section-subtitle-hours">
+                        08:00
+                        <br>
+                        03:00
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="number">
+                RESERVATION NUMBER: 0842-5484214
+            </div>
+
+        </section>
+
+        {{-- BEGIN MENU SECTION --}}
+        <section>
+
         </section>
     </main>
 
