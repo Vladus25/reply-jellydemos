@@ -11575,8 +11575,142 @@ main section.testimonials {
 }
 
 main section.testimonials .container-testimonials {
-  max-width: 1234px;
+  max-width: 1220px;
   margin: 0px auto;
+}
+
+main section.testimonials .container-testimonials .logo-text {
+  position: relative;
+  padding-top: 35px;
+}
+
+main section.testimonials .container-testimonials .logo-text .testimonials-img {
+  background-image: url("/storage/img/testimonials-logo-yellow.png");
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+main section.testimonials .container-testimonials .logo-text .test-container {
+  position: relative;
+  display: flex;
+}
+
+main section.testimonials .container-testimonials .logo-text .test-container h2::after {
+  width: 40px;
+  height: 3px;
+  background: #e2e9ed;
+  position: absolute;
+  bottom: -5px;
+  left: 36px;
+}
+
+main section.testimonials .container-testimonials .logo-text .test-container h2 {
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #E5D43E;
+  text-transform: uppercase;
+  max-width: 1150px;
+}
+
+main section.testimonials .container-testimonials .logo-text .test-container span {
+  position: absolute;
+  font-family: Bitter;
+  right: 40px;
+  top: -15px;
+  font-weight: 700;
+  font-size: 100px;
+  color: #E5D43E;
+}
+
+main section.testimonials .container-testimonials .owl-item {
+  width: 1152px;
+}
+
+main section.testimonials .container-testimonials .owl-item .item p {
+  font-family: "Cabin", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  color: #e2e9ed;
+  font-size: 25px;
+  line-height: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main section.testimonials .container-testimonials .owl-item .item .author {
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #E5D43E;
+  font-weight: 700;
+}
+
+main section.testimonials .container-testimonials .owl-item .item .author::before {
+  content: "- ";
+}
+
+main section.testimonials .container-testimonials .owl-pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+main section.testimonials .container-testimonials .owl-pagination .owl-page {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: transparent;
+  margin: 15px 2px 0px 2px;
+  border: 2px solid #E5D43E;
+  cursor: pointer;
+}
+
+main section.testimonials .container-testimonials .owl-pagination .owl-page:hover {
+  background: #E5D43E;
+}
+
+main section.testimonials .container-testimonials .owl-pagination .active {
+  background: #E5D43E;
+}
+
+main section.contact-dark {
+  background: #141313;
+  padding-top: 65px;
+}
+
+main section.contact-dark .container-contact {
+  max-width: 1220px;
+  margin: 0px auto;
+  padding: 0px 34px;
+}
+
+main section.contact-dark .container-contact .title-contact {
+  display: flex;
+}
+
+main section.contact-dark .container-contact .title-contact h2 {
+  text-align: center;
+  font-family: "Cabin";
+  font-weight: 600;
+  font-size: 28px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+main section.contact-dark .container-contact .title-contact h2::before {
+  content: url("/storage/img/two-line.png");
+  margin: 14px;
+  align-items: center;
+}
+
+main section.contact-dark .container-contact .title-contact h2::after {
+  content: url("/storage/img/two-line.png");
+  margin: 14px;
+  align-items: center;
 }
 
 * {

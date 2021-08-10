@@ -279,7 +279,36 @@
         {{-- TESTIMONIALS SECTION --}}
         <section class="testimonials">
             <div class="container-testimonials">
+                <div class="logo-text">
+                    <div class="testimonials-img"></div>
+                    <div class="test-container">
+                        <h2>Testimonials</h2>
+                        <span>”</span>
+                    </div>
+                </div>
 
+                <div class="owl-item">
+                    <div class="item">
+                        <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+                        <span class="author">Alexander Smith</span>
+                    </div>
+                </div>
+
+                <div class="owl-pagination">
+                    <div class="owl-page active"></div>
+                    <div class="owl-page"></div>
+                    <div class="owl-page"></div>
+                </div>
+            </div>
+        </section>
+
+        {{-- CONTACT SECTION --}}
+        <section class="contact-dark">
+            <div class="container-contact">
+
+                <div class="title-contact">
+                    <h2>Contact</h2>
+                </div>
             </div>
         </section>
     </main>
