@@ -309,6 +309,29 @@
                 <div class="title-contact">
                     <h2>Contact</h2>
                 </div>
+
+                <div class="section-subtitle">
+                    W325 State Road 123 Mondovi, WI  (Wisconsin)   98746-54321
+                </div>
+
+                <form class="contact" action="index.html" method="post">
+
+                    <div class="info-message-container">
+                        <div class="info">
+                            <input type="text" name="name" value="Name">
+                            <input type="text" name="email" value="Email">
+                            <input type="text" name="subject" value="Subject">
+                        </div>
+
+                        <div class="message">
+                            <textarea name="message" rows="10" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="submit">
+                        <input class="button" type="submit" name="" value="Submit">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
