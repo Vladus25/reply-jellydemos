@@ -11316,6 +11316,12 @@ main section.about .about-container-2 .img-container .owl-pagination .owl-page {
   background: transparent;
   margin: 31px 6px;
   border: 2px solid #C8C7C6;
+  cursor: pointer;
+}
+
+main section.about .about-container-2 .img-container .owl-pagination .owl-page:hover {
+  background: #C8C7C6;
+  border-color: #C8C7C6;
 }
 
 main section.about .about-container-2 .img-container .owl-pagination .active {
@@ -11434,13 +11440,143 @@ main section.timetable .hour-days-container .column-divider {
 }
 
 main section.timetable .number {
-  margin-top: 40px;
+  margin-top: 30px;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
+}
+
+main section.menu {
+  padding-bottom: 40px;
+  padding-top: 0px;
+  background-image: url("/storage/img/menu-left.jpg"), url("/storage/img/menu-right.jpg");
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  min-height: 950px;
+  background-color: white;
+}
+
+main section.menu .container-begin {
+  width: 1234px;
+  margin: auto;
+  background-color: white;
+  padding-bottom: 65px;
+}
+
+main section.menu .container-begin .img-menu {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px 115px 0;
+}
+
+main section.menu .container-begin .part-menu-containe {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section.menu .container-begin .part-menu-containe .part-menu {
+  width: calc(100% / 3);
+  padding: 0px 33px 20px 33px;
+}
+
+main section.menu .container-begin .part-menu-containe .part-menu h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #D6C63B;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+main section.menu .container-begin .part-menu-containe .part-menu ul {
+  list-style: none;
+}
+
+main section.menu .container-begin .part-menu-containe .part-menu ul li {
+  margin-bottom: 20px;
+  font-family: "Cabin", sans-serif;
+}
+
+main section.menu .container-begin .part-menu-containe .part-menu ul li .name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0c0901;
+}
+
+main section.menu .container-begin .part-menu-containe .part-menu ul li .details {
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+main section.menu .container-begin .part-menu-containe .part-menu ul li .details .detail {
+  font-size: 16px;
+  font-weight: 400;
+  color: #484745;
+}
+
+main section.menu .container-begin .part-menu-containe .part-menu ul li .details .price {
+  color: #E5D43E;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+}
+
+main section.menu .container-begin .all-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+main section.menu .container-begin .all-menu a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  padding: 16px 35px;
+  transition: 0.5s all ease;
+  margin-top: 40px;
+}
+
+main section.menu .container-begin .all-menu a:hover {
+  color: #ffffff;
+  background: #E5D43E;
+}
+
+main section.menu .container-begin .all-menu a::before {
+  content: url("/storage/img/button-line.png");
+  position: absolute;
+  right: 285px;
+}
+
+main section.menu .container-begin .all-menu a::after {
+  content: url("/storage/img/button-line.png");
+  position: absolute;
+  left: 289px;
+}
+
+main section.testimonials {
+  background-image: url("/storage/img/testimonials.jpg");
+  min-height: 505px;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main section.testimonials .container-testimonials {
+  max-width: 1234px;
+  margin: 0px auto;
 }
 
 * {
