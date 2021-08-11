@@ -146,41 +146,17 @@
                     <div class="part-menu">
                         <h3>Prime Steaks</h3>
                         <ul>
-                            <li>
-                                <div class="name">Filet</div>
-                                <div class="details">
-                                    <span class="detail">7 oz. Center Cut10 oz. Double cut</span>
-                                    <span class="price">$14.49</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Boine in filet</div>
-                                <div class="details">
-                                    <span class="detail">10 oz Greg Norman Ranch, Australia</span>
-                                    <span class="price">$20.50</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">New York Strip</div>
-                                <div class="details">
-                                    <span class="detail">9 oz. Center Cut12 oz. Double cut  oz</span>
-                                    <span class="price">$9.99</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Porterhouse</div>
-                                <div class="details">
-                                    <span class="detail">7 oz. Center Cut10 oz. Double cut</span>
-                                    <span class="price">$7.99</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Delmonico</div>
-                                <div class="details">
-                                    <span class="detail">10 oz Greg Norman Ranch, Australia</span>
-                                    <span class="price">$17.99</span>
-                                </div>
-                            </li>
+                            @foreach ($plates as $plate)
+                                @if ($plate -> category == 'Prime Steaks')
+                                    <li>
+                                        <div class="name">{{$plate -> name}}</div>
+                                        <div class="details">
+                                            <span class="detail">{{$plate -> description}}</span>
+                                            <span class="price">${{$plate -> price}}</span>
+                                        </div>
+                                    </li>
+                                @endif
+                            @endforeach
                         </ul>
                     </div>
 
@@ -188,41 +164,17 @@
                     <div class="part-menu">
                         <h3>Drinks & Wines</h3>
                         <ul>
-                            <li>
-                                <div class="name">Raimat Abadia</div>
-                                <div class="details">
-                                    <span class="detail">Complex, Dark Cherry, Spice, bodied</span>
-                                    <span class="price">$8.50</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Eden Chardonnay</div>
-                                <div class="details">
-                                    <span class="detail">Elegant, Lemon, Vanilla, bodied</span>
-                                    <span class="price">$15.50</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Mailly Brut Reserva</div>
-                                <div class="details">
-                                    <span class="detail">Dry, Toast, Citrus, Medium-bodied </span>
-                                    <span class="price">$17.50</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Leon V de Armenia</div>
-                                <div class="details">
-                                    <span class="detail">Crisp, Citrus, Full-bodied</span>
-                                    <span class="price">$12.50</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Caberenet Sauvignon</div>
-                                <div class="details">
-                                    <span class="detail">Intense, Cherry, Chocolate, Full-bodied</span>
-                                    <span class="price">$30.50</span>
-                                </div>
-                            </li>
+                            @foreach ($plates as $plate)
+                                @if ($plate -> category == 'Drinks & Wines')
+                                    <li>
+                                        <div class="name">{{$plate -> name}}</div>
+                                        <div class="details">
+                                            <span class="detail">{{$plate -> description}}</span>
+                                            <span class="price">${{$plate -> price}}</span>
+                                        </div>
+                                    </li>
+                                @endif
+                            @endforeach
                         </ul>
                     </div>
 
@@ -230,41 +182,17 @@
                     <div class="part-menu">
                         <h3>Desserts</h3>
                         <ul>
-                            <li>
-                                <div class="name">Creme Brulee</div>
-                                <div class="details">
-                                    <span class="detail">Creme Anglaise, Vanilla Bean Ice Cream </span>
-                                    <span class="price">$7.49</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Warm chocolate</div>
-                                <div class="details">
-                                    <span class="detail">Amarena Cherries, Kirsch Cream</span>
-                                    <span class="price">$6.50</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Cheese cake</div>
-                                <div class="details">
-                                    <span class="detail">Cheese creme, ice cream, strawberry </span>
-                                    <span class="price">$4.50</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Apple Turnover</div>
-                                <div class="details">
-                                    <span class="detail">Creme Anglaise, Vanilla Bean Ice Cream</span>
-                                    <span class="price">$7.99</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Sorbet with fruit</div>
-                                <div class="details">
-                                    <span class="detail">Lemon, organge, strawberry or mango</span>
-                                    <span class="price">$8.50</span>
-                                </div>
-                            </li>
+                            @foreach ($plates as $plate)
+                                @if ($plate -> category == 'Desserts')
+                                    <li>
+                                        <div class="name">{{$plate -> name}}</div>
+                                        <div class="details">
+                                            <span class="detail">{{$plate -> description}}</span>
+                                            <span class="price">${{$plate -> price}}</span>
+                                        </div>
+                                    </li>
+                                @endif
+                            @endforeach
                         </ul>
                     </div>
                 </div>

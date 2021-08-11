@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{asset('/css/app.css')}}">
     {{-- JS/VUE --}}
     <script src="{{ asset('js/app.js') }}"></script>
+    {{-- Google Maps --}}
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcuppMhauIriqvk0SmhHusBCf8fvAqMS4&callback=initMap&libraries=places&v=weekly&channel=2"
       async
