@@ -767,6 +767,7 @@ main{
                             height: 80px;
                             padding-left: 20px;
                             margin-bottom: 44px;
+                            outline: 0 none;
                         }
 
                         input:focus{
@@ -790,6 +791,7 @@ main{
                             height: 328px;
                             padding-left: 20px;
                             margin-bottom: 44px;
+                            outline: 0 none;
                         }
 
                         textarea:focus{
@@ -825,6 +827,14 @@ main{
                     }
                 }
             }
+        }
+    }
+
+    section.position{
+
+        #map{
+            height: 500px;
+            width: 100%;
         }
     }
 }

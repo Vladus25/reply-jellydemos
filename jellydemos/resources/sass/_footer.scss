@@ -1,0 +1,42 @@
+footer{
+    background: #141313;
+    text-align: center;
+    font-size: 20px;
+    color: #606060;
+    position: relative;
+    height: 240px;
+    padding-top: 90px;
+
+    .container-footer{
+        max-width: 1220px;
+        margin: 0px auto;
+
+        .social{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            li{
+                margin: 0 5px;
+
+                a{
+                    background: #3D3C38;
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    font-size: 32px;
+                    line-height: 60px;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    transition: all 0.5s ease;
+                }
+
+                a:hover{
+                    background: #E5D43E;
+                }
+            }
+        }
+    }
+}

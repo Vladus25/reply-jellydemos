@@ -11705,13 +11705,11 @@ main section.contact-dark .container-contact .title-contact h2 {
 main section.contact-dark .container-contact .title-contact h2::before {
   content: url("/storage/img/two-line.png");
   margin: 14px;
-  align-items: center;
 }
 
 main section.contact-dark .container-contact .title-contact h2::after {
   content: url("/storage/img/two-line.png");
   margin: 14px;
-  align-items: center;
 }
 
 main section.contact-dark .container-contact .section-subtitle {
@@ -11746,6 +11744,7 @@ main section.contact-dark .container-contact form.contact .info-message-containe
   height: 80px;
   padding-left: 20px;
   margin-bottom: 44px;
+  outline: 0 none;
 }
 
 main section.contact-dark .container-contact form.contact .info-message-container .info input:focus {
@@ -11769,6 +11768,7 @@ main section.contact-dark .container-contact form.contact .info-message-containe
   height: 328px;
   padding-left: 20px;
   margin-bottom: 44px;
+  outline: 0 none;
 }
 
 main section.contact-dark .container-contact form.contact .info-message-container .message textarea:focus {
@@ -11791,7 +11791,7 @@ main section.contact-dark .container-contact form.contact .submit .button {
   border: none;
   outline: 0 none;
   padding: 10px 20px;
-  margin: 50px 0;
+  margin: 50px 0px 70px 0px;
   width: 200px;
   min-height: 70px;
   transition: 0.5s all ease;
@@ -11800,6 +11800,54 @@ main section.contact-dark .container-contact form.contact .submit .button {
 main section.contact-dark .container-contact form.contact .submit .button:hover {
   color: #E5D43E;
   background: #ffffff;
+}
+
+main section.position #map {
+  height: 500px;
+  width: 100%;
+}
+
+footer {
+  background: #141313;
+  text-align: center;
+  font-size: 20px;
+  color: #606060;
+  position: relative;
+  height: 240px;
+  padding-top: 90px;
+}
+
+footer .container-footer {
+  max-width: 1220px;
+  margin: 0px auto;
+}
+
+footer .container-footer .social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+footer .container-footer .social li {
+  margin: 0 5px;
+}
+
+footer .container-footer .social li a {
+  background: #3D3C38;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 60px;
+  color: #ffffff;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+footer .container-footer .social li a:hover {
+  background: #E5D43E;
 }
 
 * {
