@@ -140,7 +140,7 @@
                     <img src="{{asset('/storage/img/menu-logo.png')}}" alt="Menu logo">
                 </div>
 
-                <div class="part-menu-containe">
+                <div class="part-menu-container">
 
                     {{-- Prime Steaks --}}
                     <div class="part-menu">

@@ -13,28 +13,28 @@ class SlideSeeder extends Seeder
     {
         $slides = [
             [
-                'category' => 'slide',
+                'category' => 'Slide',
                 'img' => 'main-1.jpg',
             ],
             [
-                'category' => 'slide',
+                'category' => 'Slide',
                 'img' => 'main-2.jpg',
             ],
             [
-                'category' => 'slide',
+                'category' => 'Slide',
                 'img' => 'main-3.jpg',
             ],
             [
-                'category' => 'text-slide',
-                'img' => 'Welcome to restaurant',
+                'category' => 'Text-slide',
+                'text' => 'Welcome to restaurant',
             ],
             [
-                'category' => 'text-slide',
-                'img' => 'Elixir exclusively food',
+                'category' => 'Text-slide',
+                'text' => 'Elixir exclusively food',
             ],
             [
-                'category' => 'text-slide',
-                'img' => 'The soul food & bistro',
+                'category' => 'Text-slide',
+                'text' => 'The soul food & bistro',
             ],
         ];
 

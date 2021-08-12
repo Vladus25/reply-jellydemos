@@ -11472,17 +11472,17 @@ main section.menu .container-begin .img-menu {
   padding: 100px 0px 115px 0;
 }
 
-main section.menu .container-begin .part-menu-containe {
+main section.menu .container-begin .part-menu-container {
   display: flex;
   justify-content: space-between;
 }
 
-main section.menu .container-begin .part-menu-containe .part-menu {
+main section.menu .container-begin .part-menu-container .part-menu {
   width: calc(100% / 3);
   padding: 0px 33px 20px 33px;
 }
 
-main section.menu .container-begin .part-menu-containe .part-menu h3 {
+main section.menu .container-begin .part-menu-container .part-menu h3 {
   text-transform: uppercase;
   text-align: center;
   color: #D6C63B;
@@ -11492,35 +11492,35 @@ main section.menu .container-begin .part-menu-containe .part-menu h3 {
   margin-bottom: 33px;
 }
 
-main section.menu .container-begin .part-menu-containe .part-menu ul {
+main section.menu .container-begin .part-menu-container .part-menu ul {
   list-style: none;
 }
 
-main section.menu .container-begin .part-menu-containe .part-menu ul li {
+main section.menu .container-begin .part-menu-container .part-menu ul li {
   margin-bottom: 20px;
   font-family: "Cabin", sans-serif;
 }
 
-main section.menu .container-begin .part-menu-containe .part-menu ul li .name {
+main section.menu .container-begin .part-menu-container .part-menu ul li .name {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 15px;
   color: #0c0901;
 }
 
-main section.menu .container-begin .part-menu-containe .part-menu ul li .details {
+main section.menu .container-begin .part-menu-container .part-menu ul li .details {
   display: flex;
   justify-content: space-between;
   line-height: 25px;
 }
 
-main section.menu .container-begin .part-menu-containe .part-menu ul li .details .detail {
+main section.menu .container-begin .part-menu-container .part-menu ul li .details .detail {
   font-size: 16px;
   font-weight: 400;
   color: #484745;
 }
 
-main section.menu .container-begin .part-menu-containe .part-menu ul li .details .price {
+main section.menu .container-begin .part-menu-container .part-menu ul li .details .price {
   color: #E5D43E;
   font-weight: 700;
   font-style: italic;
@@ -11848,6 +11848,713 @@ footer .container-footer .social li a {
 
 footer .container-footer .social li a:hover {
   background: #E5D43E;
+}
+
+main.admin-main {
+  background-color: white;
+}
+
+main.admin-main section.admin-slides {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-slides h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.admin-main section.admin-slides div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-slides .slides {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-slides .slides ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.admin-main section.admin-slides .slides ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 4);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.admin-main section.admin-slides .slides ul li i {
+  font-size: 24px;
+}
+
+main.admin-main section.admin-slides .new-slide {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.admin-main section.admin-slides .new-slide a {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  height: 43px;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+main.admin-main section.admin-slides .new-slide a:hover {
+  background-color: black;
+  border-color: black;
+}
+
+main.admin-main section.admin-plates {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-plates h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.admin-main section.admin-plates div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-plates .menu {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-plates .menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.admin-main section.admin-plates .menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 6);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.admin-main section.admin-plates .menu ul li i {
+  font-size: 24px;
+}
+
+main.admin-main section.admin-plates .new-plate {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.admin-main section.admin-plates .new-plate a {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  height: 43px;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+main.admin-main section.admin-plates .new-plate a:hover {
+  background-color: black;
+  border-color: black;
+}
+
+main.admin-main section.admin-testimonials {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-testimonials h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.admin-main section.admin-testimonials div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-testimonials .testimonials {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.admin-main section.admin-testimonials .testimonials ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.admin-main section.admin-testimonials .testimonials ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 4);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.admin-main section.admin-testimonials .testimonials ul li i {
+  font-size: 24px;
+}
+
+main.admin-main section.admin-testimonials .new-testimonial {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.admin-main section.admin-testimonials .new-testimonial a {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  height: 43px;
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+
+main.admin-main section.admin-testimonials .new-testimonial a:hover {
+  background-color: black;
+  border-color: black;
+}
+
+main.create-slide {
+  background-color: white;
+}
+
+main.create-slide .container-slide {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-slide .container-slide .container-2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-slide .container-slide .container-2 h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.create-slide .container-slide .container-2 .slide {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-slide .container-slide .container-2 .slide ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.create-slide .container-slide .container-2 .slide ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 3);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.create-slide .container-slide .container-2 .slide ul li input {
+  width: 100%;
+  outline: 0 none;
+}
+
+main.create-slide .container-slide .container-2 .slide ul li select {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+main.create-slide .container-slide .container-2 .new-slide {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.create-slide .container-slide .container-2 .new-slide button {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: 0.5s all ease;
+}
+
+main.create-slide .container-slide .container-2 .new-slide button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+main.create-plate {
+  background-color: white;
+}
+
+main.create-plate .container-plate {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-plate .container-plate .container-2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-plate .container-plate .container-2 h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.create-plate .container-plate .container-2 .plate {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-plate .container-plate .container-2 .plate ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.create-plate .container-plate .container-2 .plate ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 4);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.create-plate .container-plate .container-2 .plate ul li input {
+  width: 100%;
+  outline: 0 none;
+}
+
+main.create-plate .container-plate .container-2 .plate ul li select {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+main.create-plate .container-plate .container-2 .new-plate {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.create-plate .container-plate .container-2 .new-plate button {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: 0.5s all ease;
+}
+
+main.create-plate .container-plate .container-2 .new-plate button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+main.create-testimonial {
+  background-color: white;
+}
+
+main.create-testimonial .container-testimonial {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-testimonial .container-testimonial .container-2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-testimonial .container-testimonial .container-2 h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.create-testimonial .container-testimonial .container-2 .testimonial {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.create-testimonial .container-testimonial .container-2 .testimonial ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.create-testimonial .container-testimonial .container-2 .testimonial ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 4);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.create-testimonial .container-testimonial .container-2 .testimonial ul li input {
+  width: 100%;
+  outline: 0 none;
+}
+
+main.create-testimonial .container-testimonial .container-2 .new-testimonial {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.create-testimonial .container-testimonial .container-2 .new-testimonial button {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: 0.5s all ease;
+}
+
+main.create-testimonial .container-testimonial .container-2 .new-testimonial button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+main.edit-slide {
+  background-color: white;
+}
+
+main.edit-slide .container-slide {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-slide .container-slide .container-2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-slide .container-slide .container-2 h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.edit-slide .container-slide .container-2 .slide {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-slide .container-slide .container-2 .slide ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.edit-slide .container-slide .container-2 .slide ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 3);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.edit-slide .container-slide .container-2 .slide ul li input {
+  width: 100%;
+  outline: 0 none;
+}
+
+main.edit-slide .container-slide .container-2 .edit-slide {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.edit-slide .container-slide .container-2 .edit-slide button {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: 0.5s all ease;
+}
+
+main.edit-slide .container-slide .container-2 .edit-slide button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+main.edit-plate {
+  background-color: white;
+}
+
+main.edit-plate .container-plate {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-plate .container-plate .container-2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-plate .container-plate .container-2 h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.edit-plate .container-plate .container-2 .plate {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-plate .container-plate .container-2 .plate ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.edit-plate .container-plate .container-2 .plate ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 4);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.edit-plate .container-plate .container-2 .plate ul li input {
+  width: 100%;
+  outline: 0 none;
+}
+
+main.edit-plate .container-plate .container-2 .edit-plate {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.edit-plate .container-plate .container-2 .edit-plate button {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: 0.5s all ease;
+}
+
+main.edit-plate .container-plate .container-2 .edit-plate button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+main.edit-testimonial {
+  background-color: white;
+}
+
+main.edit-testimonial .container-testimonial {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-testimonial .container-testimonial .container-2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-testimonial .container-testimonial .container-2 h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+main.edit-testimonial .container-testimonial .container-2 .testimonial {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.edit-testimonial .container-testimonial .container-2 .testimonial ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.edit-testimonial .container-testimonial .container-2 .testimonial ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: 1px solid black;
+  width: calc(100% / 3);
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+}
+
+main.edit-testimonial .container-testimonial .container-2 .testimonial ul li input {
+  width: 100%;
+  outline: 0 none;
+}
+
+main.edit-testimonial .container-testimonial .container-2 .edit-testimonial {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+main.edit-testimonial .container-testimonial .container-2 .edit-testimonial button {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #E5D43E;
+  border: 2px solid #E5D43E;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: 0.5s all ease;
+}
+
+main.edit-testimonial .container-testimonial .container-2 .edit-testimonial button:hover {
+  background-color: black;
+  border-color: black;
 }
 
 * {

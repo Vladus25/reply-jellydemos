@@ -9,5 +9,6 @@ class Slide extends Model
     protected $fillable = [
         'category',
         'img',
+        'text'
     ];
 }
