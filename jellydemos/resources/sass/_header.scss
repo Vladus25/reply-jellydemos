@@ -1,5 +1,5 @@
 header{
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -7,6 +7,26 @@ header{
     background-color: rgba(12,12,13,0.78);
     z-index: 1001;
     padding-top: 20px;
+
+    &.onScroll{
+        position: fixed;
+        z-index: 99999;
+        background-color: #fff;
+        transition: all 0.3s ease-in;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.11);
+
+        nav #navigation ul li{
+            .home{
+                color: #E5D43E;
+            }
+        }
+
+        nav #navigation ul li a{
+            color: #818181;
+        }
+
+
+    }
 
     nav{
         display: flex;
@@ -17,6 +37,7 @@ header{
         }
 
         #navigation{
+
             ul{
                 display: flex;
                 list-style: none;
@@ -35,6 +56,10 @@ header{
                         border-bottom: 3px solid transparent;
                         color: white;
                         text-decoration: none;
+                    }
+
+                    .home{
+                        color: #E5D43E;
                     }
 
                     a:hover{

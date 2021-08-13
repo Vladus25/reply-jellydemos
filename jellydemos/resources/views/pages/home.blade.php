@@ -8,22 +8,67 @@
         <section class="jumbotron-container">
 
             <div class="jumbotron-img">
-                {{-- <img src="{{asset('/storage/img/main-1.jpg')}}" alt="Main-1"> --}}
-                <div class="jumbotron-main-1"></div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        @foreach ($slides as $slide)
+                            @if ($slide -> category == "Slide")
+
+                                @if ($slide -> id == '1')
+                                    <div class="carousel-item active">
+                                        <div class="jumbotron-main-1 d-block w-100" style="background-image: url('/storage/img/{{$slide -> img}}');"></div>
+                                    </div>
+                                @endif
+                                @if ($slide -> id > '1')
+                                    <div class="carousel-item">
+                                        <div class="jumbotron-main-1 d-block w-100" style="background-image: url('/storage/img/{{$slide -> img}}');"></div>
+                                    </div>
+                                @endif
+
+                            @endif
+                        @endforeach
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
 
             <div class="slide-content">
                 <div class="logo-intro"></div>
 
                 <div class="text-welcome">
-                    <h2>Welcome to restaurant</h2>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            @foreach ($slides as $slide)
+                                @if ($slide -> category == "Text-slide")
+
+                                    @if ($slide -> id == '4')
+                                        <div class="carousel-item active">
+                                            <h2 class="d-block w-100">{{$slide -> text}}</h2>
+                                        </div>
+                                    @endif
+                                    @if ($slide -> id > '4')
+                                        <div class="carousel-item">
+                                            <h2 class="d-block w-100">{{$slide -> text}}</h2>
+                                        </div>
+                                    @endif
+
+                                @endif
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
 
                 <div class="slide-sep"></div>
 
                 <p>The Chef creates divine combinations</p>
 
-                <div class="scroll-about">
+                <div class="scroll-about app">
                     <span></span>
                 </div>
 
@@ -59,25 +104,28 @@
                 </div>
 
                 <div class="img-container">
-                    <img src="{{ asset('storage/img/about-1.jpg') }}" alt="">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="{{ asset('storage/img/about-1.jpg') }}" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{ asset('storage/img/about-2.jpg') }}" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{ asset('storage/img/about-3.jpg') }}" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="about-container-2">
 
-                <div class="img-container">
-                    <img src="{{ asset('storage/img/about-4.jpg') }}" alt="">
-
-                    <div class="owl-buttons">
-                        <div class="owl-prev"></div>
-                        <div class="owl-next"></div>
-                    </div>
-
-                    <div class="owl-pagination">
-                        <div class="owl-page active"></div>
-                        <div class="owl-page"></div>
-                        <div class="owl-page"></div>
-                    </div>
+                <div class="img-container owl-carousel owl-theme">
+                    <img class="item" src="{{ asset('storage/img/about-4.jpg') }}" alt="">
+                    <img class="item" src="{{ asset('storage/img/about-5.jpg') }}" alt="">
+                    <img class="item" src="{{ asset('storage/img/about-6.jpg') }}" alt="">
                 </div>
 
                 <div class="text-container">
@@ -215,17 +263,13 @@
                     </div>
                 </div>
 
-                <div class="owl-item">
-                    <div class="item">
-                        <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
-                        <span class="author">Alexander Smith</span>
-                    </div>
-                </div>
-
-                <div class="owl-pagination">
-                    <div class="owl-page active"></div>
-                    <div class="owl-page"></div>
-                    <div class="owl-page"></div>
+                <div class="owl-item owl-carousel owl-theme">
+                    @foreach ($testimonials as $testimonial)
+                        <div class="item">
+                            <p>{{$testimonial -> description}}</p>
+                            <span class="author">{{$testimonial -> author}}</span>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </section>

@@ -49846,18 +49846,48 @@ module.exports = function(module) {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]); // const app = new Vue({
-//     el: '#app',
-//     data: {
-//
-//     },
-//     mounted() {
-//       this.mapping();
-//     },
-//     methods: {
-//
-//     },
-// });
+Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]); // Carousel Testimonials
+
+document.addEventListener('DOMContentLoaded', function () {
+  jQuery(document).ready(function ($) {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  new Vue({
+    el: '#app',
+    data: {
+      scrollPosition: null,
+      timer: ''
+    },
+    mounted: function mounted() {
+      window.addEventListener('scroll', this.updateScroll);
+    },
+    methods: {
+      updateScroll: function updateScroll() {
+        this.scrollPosition = window.scrollY;
+      },
+      AboutScroll: function AboutScroll() {
+        window.scrollTo(100, 900);
+      }
+    }
+  });
+});
 
 /***/ }),
 

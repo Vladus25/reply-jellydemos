@@ -10943,7 +10943,7 @@ a.text-dark:focus {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -10951,6 +10951,22 @@ header {
   background-color: rgba(12, 12, 13, 0.78);
   z-index: 1001;
   padding-top: 20px;
+}
+
+header.onScroll {
+  position: fixed;
+  z-index: 99999;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+}
+
+header.onScroll nav #navigation ul li .home {
+  color: #E5D43E;
+}
+
+header.onScroll nav #navigation ul li a {
+  color: #818181;
 }
 
 header nav {
@@ -10984,6 +11000,10 @@ header nav #navigation ul li a {
   text-decoration: none;
 }
 
+header nav #navigation ul li .home {
+  color: #E5D43E;
+}
+
 header nav #navigation ul li a:hover {
   color: #E5D43E;
 }
@@ -10992,10 +11012,29 @@ main section.jumbotron-container {
   position: relative;
 }
 
+main section.jumbotron-container .carousel-control-prev-icon {
+  width: 79px;
+  height: 79px;
+  background: url("/storage/img/btn-prev.png") no-repeat center center;
+  opacity: 0.4;
+  margin-left: 15px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+main section.jumbotron-container .carousel-control-next-icon {
+  width: 79px;
+  height: 79px;
+  background: url("/storage/img/btn-next.png") no-repeat center center;
+  opacity: 0.4;
+  margin-right: 18px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
 main section.jumbotron-container .jumbotron-img .jumbotron-main-1 {
   width: auto;
   height: 100vh;
-  background-image: url("/storage/img/main-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11194,8 +11233,8 @@ main section.about .about-container-1 {
 }
 
 main section.about .about-container-1 .text-container {
-  width: 600px;
-  padding: 0px 25px;
+  width: 635px;
+  padding: 0px 50px 0px 25px;
 }
 
 main section.about .about-container-1 .text-container h2 {
@@ -11248,60 +11287,98 @@ main section.about .about-container-2 {
 
 main section.about .about-container-2 .img-container {
   position: relative;
-  width: 600px;
+  width: 610px;
   padding: 0px 25px;
   margin-top: 10px;
 }
 
 main section.about .about-container-2 .img-container img {
-  width: 100%;
+  width: 102%;
 }
 
-main section.about .about-container-2 .img-container .owl-buttons {
+main section.about .about-container-2 .img-container .owl-nav {
+  display: flex;
+  justify-content: space-between;
   height: 43px;
   position: absolute;
   left: 40px;
   right: 40px;
-  top: 50px;
+  top: 30px;
   bottom: 130px;
   margin: auto;
   z-index: 9999;
+  background-color: transparent;
 }
 
-main section.about .about-container-2 .img-container .owl-buttons .owl-prev {
+main section.about .about-container-2 .img-container .owl-nav .owl-prev span {
   width: 50px;
   height: 50px;
   background: url("/storage/img/arrow-left.png") no-repeat center center;
   opacity: 0.4;
   font-size: 0;
   float: left;
-  margin-left: 15px;
   position: relative;
   z-index: 9999;
   cursor: pointer;
+  margin-left: 15px;
 }
 
-main section.about .about-container-2 .img-container .owl-buttons .owl-prev:hover {
+main section.about .about-container-2 .img-container .owl-prev {
+  background-color: transparent;
+}
+
+main section.about .about-container-2 .img-container .owl-nav .owl-prev span:hover {
   opacity: 1;
   transition: all 0.3s ease-in-out;
+  background-color: transparent;
 }
 
-main section.about .about-container-2 .img-container .owl-buttons .owl-next {
+main section.about .about-container-2 .img-container .owl-nav .owl-next span {
   width: 50px;
   height: 50px;
   background: url("/storage/img/arrow-right.png") no-repeat center center;
   opacity: 0.4;
   font-size: 0;
   float: right;
-  margin-right: 18px;
   position: relative;
   z-index: 9999;
   cursor: pointer;
+  margin-right: 18px;
 }
 
-main section.about .about-container-2 .img-container .owl-buttons .owl-next:hover {
+main section.about .about-container-2 .img-container .owl-next {
+  background-color: transparent;
+}
+
+main section.about .about-container-2 .img-container .owl-nav .owl-next span:hover {
   opacity: 1;
   transition: all 0.3s ease-in-out;
+  background-color: tras;
+}
+
+main section.about .about-container-2 .img-container .owl-dots .owl-dot span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: transparent;
+  margin: 31px 6px;
+  border: 2px solid #C8C7C6;
+  cursor: pointer;
+}
+
+main section.about .about-container-2 .img-container .owl-dots .owl-dot span:hover {
+  background: #C8C7C6;
+  border-color: #C8C7C6;
+}
+
+main section.about .about-container-2 .img-container .owl-dots .active span {
+  background: #C8C7C6;
+  border-color: #C8C7C6;
+}
+
+main section.about .about-container-2 .img-container .owl-dots .owl-dot.active span {
+  background: #C8C7C6;
+  border-color: #C8C7C6;
 }
 
 main section.about .about-container-2 .img-container .owl-pagination {
@@ -11629,6 +11706,27 @@ main section.testimonials .container-testimonials .owl-item {
   width: 1152px;
 }
 
+main section.testimonials .container-testimonials .owl-item .owl-nav {
+  display: none;
+}
+
+main section.testimonials .container-testimonials .owl-item .owl-dot span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: transparent;
+  margin: 15px 2px 0px 2px;
+  border: 2px solid #E5D43E;
+}
+
+main section.testimonials .container-testimonials .owl-item .owl-dot.active span {
+  background-color: #E5D43E;
+}
+
+main section.testimonials .container-testimonials .owl-item .owl-dot span:hover {
+  background-color: #E5D43E;
+}
+
 main section.testimonials .container-testimonials .owl-item .item p {
   font-family: "Cabin", sans-serif;
   text-align: left;
@@ -11650,30 +11748,6 @@ main section.testimonials .container-testimonials .owl-item .item .author {
 
 main section.testimonials .container-testimonials .owl-item .item .author::before {
   content: "- ";
-}
-
-main section.testimonials .container-testimonials .owl-pagination {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-main section.testimonials .container-testimonials .owl-pagination .owl-page {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: transparent;
-  margin: 15px 2px 0px 2px;
-  border: 2px solid #E5D43E;
-  cursor: pointer;
-}
-
-main section.testimonials .container-testimonials .owl-pagination .owl-page:hover {
-  background: #E5D43E;
-}
-
-main section.testimonials .container-testimonials .owl-pagination .active {
-  background: #E5D43E;
 }
 
 main section.contact-dark {
