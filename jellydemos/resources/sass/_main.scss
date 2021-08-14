@@ -3,24 +3,44 @@ main{
     section.jumbotron-container{
         position: relative;
 
-        .carousel-control-prev-icon{
-            width: 79px;
-            height: 79px;
-            background: url('/storage/img/btn-prev.png') no-repeat center center;
-            opacity: 0.4;
-            margin-left: 15px;
-            z-index: 9999;
-            cursor: pointer;
+        .carousel-control-prev{
+            width: 100px;
+
+            .carousel-control-prev-icon{
+                width: 79px;
+                height: 79px;
+                background: url('/storage/img/btn-prev.png') no-repeat center center;
+                opacity: 0.4;
+                margin-left: 15px;
+                z-index: 9999;
+                cursor: pointer;
+                margin-top: 50px;
+            }
+
+            .carousel-control-prev-icon:hover{
+                opacity: 1;
+                transition: all .3s ease-in-out;
+            }
         }
 
-        .carousel-control-next-icon{
-            width: 79px;
-            height: 79px;
-            background: url('/storage/img/btn-next.png') no-repeat center center;
-            opacity: 0.4;
-            margin-right: 18px;
-            z-index: 9999;
-            cursor: pointer;
+        .carousel-control-next{
+            width: 100px;
+
+            .carousel-control-next-icon{
+                width: 79px;
+                height: 79px;
+                background: url('/storage/img/btn-next.png') no-repeat center center;
+                opacity: 0.4;
+                margin-right: 18px;
+                z-index: 9999;
+                cursor: pointer;
+                margin-top: 50px;
+            }
+
+            .carousel-control-next-icon:hover{
+                opacity: 1;
+                transition: all .3s ease-in-out;
+            }
         }
 
         .jumbotron-img{
@@ -32,8 +52,6 @@ main{
                 background-size: cover;
                 background-position: center;
             }
-
-
         }
 
         .slide-content{
@@ -80,7 +98,7 @@ main{
                 height: 24px;
                 background-image: url('/storage/img/slide-separator-yellow.png');
                 margin: 0px auto;
-                margin-top: 50px;
+                margin-top: 45px;
             }
 
             p{
@@ -128,41 +146,6 @@ main{
                 margin: auto;
                 z-index: 9999;
 
-                .owl-prev{
-                    width: 79px;
-                    height: 79px;
-                    background: url('/storage/img/btn-prev.png') no-repeat center center;
-                    opacity: 0.4;
-                    font-size: 0;
-                    float: left;
-                    margin-left: 15px;
-                    position: relative;
-                    z-index: 9999;
-                    cursor: pointer;
-                }
-
-                .owl-prev:hover{
-                    opacity: 1;
-                    transition: all .3s ease-in-out;
-                }
-
-                .owl-next{
-                    width: 79px;
-                    height: 79px;
-                    background: url('/storage/img/btn-next.png') no-repeat center center;
-                    opacity: 0.4;
-                    font-size: 0;
-                    float: right;
-                    margin-right: 18px;
-                    position: relative;
-                    z-index: 9999;
-                    cursor: pointer;
-                }
-
-                .owl-next:hover{
-                    opacity: 1;
-                    transition: all .3s ease-in-out;
-                }
             }
         }
 

@@ -11012,7 +11012,11 @@ main section.jumbotron-container {
   position: relative;
 }
 
-main section.jumbotron-container .carousel-control-prev-icon {
+main section.jumbotron-container .carousel-control-prev {
+  width: 100px;
+}
+
+main section.jumbotron-container .carousel-control-prev .carousel-control-prev-icon {
   width: 79px;
   height: 79px;
   background: url("/storage/img/btn-prev.png") no-repeat center center;
@@ -11020,9 +11024,19 @@ main section.jumbotron-container .carousel-control-prev-icon {
   margin-left: 15px;
   z-index: 9999;
   cursor: pointer;
+  margin-top: 50px;
 }
 
-main section.jumbotron-container .carousel-control-next-icon {
+main section.jumbotron-container .carousel-control-prev .carousel-control-prev-icon:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+main section.jumbotron-container .carousel-control-next {
+  width: 100px;
+}
+
+main section.jumbotron-container .carousel-control-next .carousel-control-next-icon {
   width: 79px;
   height: 79px;
   background: url("/storage/img/btn-next.png") no-repeat center center;
@@ -11030,6 +11044,12 @@ main section.jumbotron-container .carousel-control-next-icon {
   margin-right: 18px;
   z-index: 9999;
   cursor: pointer;
+  margin-top: 50px;
+}
+
+main section.jumbotron-container .carousel-control-next .carousel-control-next-icon:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 main section.jumbotron-container .jumbotron-img .jumbotron-main-1 {
@@ -11082,7 +11102,7 @@ main section.jumbotron-container .slide-content .slide-sep {
   height: 24px;
   background-image: url("/storage/img/slide-separator-yellow.png");
   margin: 0px auto;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 main section.jumbotron-container .slide-content p {
@@ -11129,42 +11149,6 @@ main section.jumbotron-container .slide-content .owl-buttons {
   bottom: 65px;
   margin: auto;
   z-index: 9999;
-}
-
-main section.jumbotron-container .slide-content .owl-buttons .owl-prev {
-  width: 79px;
-  height: 79px;
-  background: url("/storage/img/btn-prev.png") no-repeat center center;
-  opacity: 0.4;
-  font-size: 0;
-  float: left;
-  margin-left: 15px;
-  position: relative;
-  z-index: 9999;
-  cursor: pointer;
-}
-
-main section.jumbotron-container .slide-content .owl-buttons .owl-prev:hover {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-
-main section.jumbotron-container .slide-content .owl-buttons .owl-next {
-  width: 79px;
-  height: 79px;
-  background: url("/storage/img/btn-next.png") no-repeat center center;
-  opacity: 0.4;
-  font-size: 0;
-  float: right;
-  margin-right: 18px;
-  position: relative;
-  z-index: 9999;
-  cursor: pointer;
-}
-
-main section.jumbotron-container .slide-content .owl-buttons .owl-next:hover {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
 }
 
 main section.jumbotron-container .overlay {
