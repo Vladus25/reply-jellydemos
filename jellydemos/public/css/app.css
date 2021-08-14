@@ -10969,6 +10969,18 @@ header.onScroll nav #navigation ul li a {
   color: #818181;
 }
 
+header.onScroll nav #navigation-mobile .burger {
+  color: black;
+}
+
+header.onScroll nav #navigation-mobile #myLinks li a {
+  color: #818181;
+}
+
+header.onScroll nav #navigation-mobile #myLinks li .home {
+  color: #E5D43E;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -11006,6 +11018,88 @@ header nav #navigation ul li .home {
 
 header nav #navigation ul li a:hover {
   color: #E5D43E;
+}
+
+header nav #navigation-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  header nav #logo {
+    padding-left: 40px;
+  }
+
+  header nav #navigation ul {
+    margin-right: 10px;
+  }
+
+  header nav #navigation ul li a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  header nav #logo {
+    padding-left: 20px;
+  }
+
+  header nav #navigation {
+    display: none;
+  }
+
+  header nav #navigation-mobile {
+    display: block;
+  }
+
+  header nav #navigation-mobile .burger {
+    margin: 10px;
+    font-size: 30px;
+    color: #fff;
+    padding-right: 25px;
+  }
+
+  header nav #navigation-mobile #myLinks {
+    display: none;
+    position: absolute;
+    background: rgba(40, 40, 40, 0.9);
+    width: 90%;
+    top: 70px;
+    left: 5%;
+    margin: 0px;
+    height: auto;
+    list-style: none;
+  }
+
+  header nav #navigation-mobile #myLinks li {
+    border-bottom: 1px solid;
+    padding: 12px 6px;
+  }
+
+  header nav #navigation-mobile #myLinks li a {
+    color: white;
+    text-shadow: 0px 0px 1px transparent;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 6px;
+    text-decoration: none;
+    padding: 0px 2px 0px 4px;
+  }
+
+  header nav #navigation-mobile #myLinks li .home {
+    color: #E5D43E;
+  }
+
+  header nav #navigation-mobile #myLinks li a:hover {
+    color: #E5D43E;
+  }
 }
 
 main section.jumbotron-container {

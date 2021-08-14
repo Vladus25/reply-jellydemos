@@ -25,6 +25,17 @@ header{
             color: #818181;
         }
 
+        nav #navigation-mobile .burger{
+            color: black;
+        }
+
+        nav #navigation-mobile #myLinks li a{
+            color: #818181;
+        }
+
+        nav #navigation-mobile #myLinks li .home{
+            color: #E5D43E;
+        }
 
     }
 
@@ -69,5 +80,103 @@ header{
             }
         }
 
+        #navigation-mobile{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header{
+
+        nav{
+
+            #logo{
+                padding-left: 40px;
+            }
+
+            #navigation{
+
+                ul{
+                    margin-right: 10px;
+
+                    li{
+
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header{
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            #logo{
+                padding-left: 20px;
+            }
+
+            #navigation{
+                display: none;
+
+            }
+
+            #navigation-mobile{
+                display: block;
+
+                .burger{
+                    margin: 10px;
+                    font-size: 30px;
+                    color: #fff;
+                    padding-right: 25px;
+                }
+
+                #myLinks{
+                    display: none;
+                    position: absolute;
+                    background: rgba(40, 40, 40, 0.9);
+                    width: 90%;
+                    top: 70px;
+                    left: 5%;
+                    margin: 0px;
+                    height: auto;
+                    list-style: none;
+
+                    li{
+                        border-bottom: 1px solid;
+                        padding: 12px 6px;
+
+                        a{
+                            color: white;
+                            text-shadow: 0px 0px 1px transparent;
+                            font-size: 14px;
+                            font-family: 'Open Sans', sans-serif;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            line-height: 6px;
+                            text-decoration: none;
+                            padding: 0px 2px 0px 4px;
+                        }
+
+                        .home{
+                            color: #E5D43E;
+                        }
+
+
+                        a:hover{
+                            color: #E5D43E;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
