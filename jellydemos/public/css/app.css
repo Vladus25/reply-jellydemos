@@ -11523,7 +11523,6 @@ main section.menu {
 main section.menu .container-begin {
   width: 1234px;
   margin: auto;
-  background-color: white;
   padding-bottom: 65px;
 }
 
@@ -11638,6 +11637,7 @@ main section.testimonials {
 main section.testimonials .container-testimonials {
   max-width: 1220px;
   margin: 0px auto;
+  padding: 0 25px;
 }
 
 main section.testimonials .container-testimonials .logo-text {
@@ -11687,7 +11687,7 @@ main section.testimonials .container-testimonials .logo-text .test-container spa
 }
 
 main section.testimonials .container-testimonials .owl-item {
-  width: 1152px;
+  width: 93%;
 }
 
 main section.testimonials .container-testimonials .owl-item .owl-nav {
@@ -11863,6 +11863,251 @@ main section.contact-dark .container-contact form.contact .submit .button:hover 
 main section.position #map {
   height: 500px;
   width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  main section.menu {
+    background-image: none;
+  }
+
+  main section.menu .container-begin {
+    width: 96%;
+  }
+
+  main section.menu .container-begin .part-menu-container .part-menu ul li .details .detail {
+    font-size: 13px;
+  }
+
+  main section.menu .container-begin .part-menu-container .part-menu ul li .details .price {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  main section.jumbotron-container .carousel-control-prev {
+    display: none;
+  }
+
+  main section.jumbotron-container .carousel-control-next {
+    display: none;
+  }
+
+  main section.jumbotron-container .slide-content .text-welcome h2 {
+    font-size: 40px;
+  }
+
+  main section.about .about-container-1 {
+    flex-wrap: wrap;
+  }
+
+  main section.about .about-container-1 .text-container {
+    width: 100%;
+  }
+
+  main section.about .about-container-1 .img-container {
+    width: 100%;
+  }
+
+  main section.about .about-container-2 {
+    flex-wrap: wrap;
+  }
+
+  main section.about .about-container-2 .img-container {
+    width: 100%;
+  }
+
+  main section.about .about-container-2 .text-container {
+    width: 100%;
+  }
+
+  main section.menu {
+    background-image: none;
+  }
+
+  main section.menu .container-begin .part-menu-container {
+    flex-wrap: wrap;
+  }
+
+  main section.menu .container-begin .part-menu-container .part-menu {
+    width: 100%;
+    padding: 0px 33px 50px 33px;
+  }
+
+  main section.menu .container-begin .part-menu-container .part-menu ul li .details .detail {
+    font-size: 16px;
+  }
+
+  main section.menu .container-begin .part-menu-container .part-menu ul li .details .price {
+    font-size: 18px;
+  }
+
+  main section.testimonials .container-testimonials .logo-text .test-container span {
+    right: 0px;
+  }
+
+  main section.contact-dark .container-contact form.contact .info-message-container {
+    flex-wrap: wrap;
+  }
+
+  main section.contact-dark .container-contact form.contact .info-message-container .info {
+    width: 100%;
+  }
+
+  main section.contact-dark .container-contact form.contact .info-message-container .message {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main section.timetable .section-title .timetable-decorator-1 {
+    width: 0px;
+  }
+
+  main section.timetable .section-title .timetable-decorator-2 {
+    width: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main section.jumbotron-container .carousel-control-prev {
+    display: none;
+  }
+
+  main section.jumbotron-container .carousel-control-next {
+    display: none;
+  }
+
+  main section.jumbotron-container .slide-content .logo-intro {
+    width: 222px;
+    height: 185px;
+    background-size: cover;
+  }
+
+  main section.jumbotron-container .slide-content .text-welcome h2 {
+    font-size: 26px;
+  }
+
+  main section.jumbotron-container .slide-content p {
+    font-size: 17px;
+  }
+
+  main section.jumbotron-container .slide-content .scroll-about {
+    bottom: 0px;
+  }
+
+  main section.about .about-container-1 {
+    flex-wrap: wrap;
+  }
+
+  main section.about .about-container-1 .text-container {
+    width: 100%;
+  }
+
+  main section.about .about-container-1 .text-container h2 {
+    font-size: 45px;
+  }
+
+  main section.about .about-container-1 .text-container p.text {
+    text-align: center;
+  }
+
+  main section.about .about-container-1 .img-container {
+    width: 100%;
+  }
+
+  main section.about .about-container-2 {
+    flex-wrap: wrap;
+  }
+
+  main section.about .about-container-2 .img-container {
+    width: 100%;
+  }
+
+  main section.about .about-container-2 .img-container .owl-nav .owl-prev span {
+    margin-left: 0px;
+  }
+
+  main section.about .about-container-2 .img-container .owl-nav .owl-next span {
+    margin-right: 0px;
+  }
+
+  main section.about .about-container-2 .text-container {
+    width: 100%;
+  }
+
+  main section.about .about-container-2 .text-container p.text {
+    text-align: center;
+  }
+
+  main section.timetable .hour-days-container {
+    flex-wrap: wrap;
+  }
+
+  main section.timetable .hour-days-container .section-subtitle-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  main section.timetable .hour-days-container .column-divider {
+    background-image: none;
+  }
+
+  main section.menu {
+    background-image: none;
+  }
+
+  main section.menu .container-begin .img-menu {
+    padding: 50px 0px;
+  }
+
+  main section.menu .container-begin .part-menu-container {
+    flex-wrap: wrap;
+  }
+
+  main section.menu .container-begin .part-menu-container .part-menu {
+    width: 100%;
+    padding: 0px 33px 50px 33px;
+  }
+
+  main section.menu .container-begin .part-menu-container .part-menu ul li .details .detail {
+    font-size: 13px;
+  }
+
+  main section.menu .container-begin .part-menu-container .part-menu ul li .details .price {
+    font-size: 14px;
+  }
+
+  main section.menu .container-begin .all-menu a {
+    width: 83%;
+  }
+
+  main section.menu .container-begin .all-menu a::before {
+    content: "";
+    position: relative;
+    right: 0px;
+  }
+
+  main section.menu .container-begin .all-menu a::after {
+    content: "";
+    position: relative;
+    left: 0px;
+  }
+
+  main section.testimonials .container-testimonials .logo-text .test-container span {
+    right: 0px;
+  }
+
+  main section.testimonials .container-testimonials .owl-item .item p {
+    font-size: 22px;
+  }
+
+  main section.contact-dark .container-contact {
+    padding: 0px 5px;
+  }
+
+  main section.contact-dark .container-contact form.contact .submit .button {
+    width: 80%;
+  }
 }
 
 footer {
@@ -12619,5 +12864,9 @@ main.edit-testimonial .container-testimonial .container-2 .edit-testimonial butt
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  min-width: 350px;
 }
 
